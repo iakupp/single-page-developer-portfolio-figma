@@ -1,4 +1,7 @@
 ---
+import "../style/style.css";
+import "../style/normalize.css";
+import MyHeading from "../components/MyHeading.astro";
 ---
 
 <html lang="en">
@@ -7,9 +10,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<script src="https://kit.fontawesome.com/05ec568796.js" defer crossorigin="anonymous"></script>
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="hero">
+			<MyHeading/>
+		</div>
 	</body>
 </html>

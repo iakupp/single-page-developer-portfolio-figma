@@ -1,0 +1,76 @@
+---
+import "../style/style.css";
+---
+<div class="container">
+  <div class="top">
+    <h2 class="logo">iakupmajercik</h2>
+    <ul class="socials">
+      <li><i class="fa-brands fa-github" style="color: #ffffff;"></i></li>
+      <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+      <li><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></li>
+      <li><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>
+    </ul>
+  </div>
+  <img src="/images/avatar.png" alt="portait" class="avatar">
+  <div class="box">
+    <img src="../../images/ovals.png" class="oval" alt="picture of oval">
+  </img>
+  <div class="circle">
+    <img src="../../images/circle.png" alt="circle">
+  </div>
+</div>
+
+
+<style>
+  .container{
+    height: 383px;
+    background: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .avatar{
+    margin-top: 30px;
+    z-index: 100;
+  }
+
+  .logo{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.333px;
+    margin-top: 20px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  li{
+    cursor: pointer;
+    height: 19.2px;
+    width: 19.2px;
+    color: var(--white-color);
+  }
+
+  .oval{
+    z-index:-10;
+    left: 0;
+    position: fixed;
+    top: 125px;
+    height: 129px;
+  }
+  .circle{
+    z-index:-10;
+    right: 0;
+    position: fixed;
+    top: 254px;
+  }
+</style>
