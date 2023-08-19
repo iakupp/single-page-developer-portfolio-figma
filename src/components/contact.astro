@@ -1,0 +1,133 @@
+---
+import "../style/style.css"
+---
+
+<div class="container">
+    <h2>Contact</h2>
+    <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+    <form action="">
+        <input type="text" placeholder="NAME">
+        <input type="text" placeholder="EMAIL">
+        <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+    </form>
+    <div class="line"></div>
+    <button>SEND MESSAGE</button>
+    <div class="line"></div>
+    <div class="footer-socials">
+        <div class="logo">jakupmajercik</div>
+        <ul class="socials">
+            <li><a href="https://github.com/iakupp?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/jakup_majercik/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/jakub_majercik"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<style>
+    .container{
+        width: 343px;
+    }
+    h2{
+        padding-top: 60px;
+        color: var(--white-color, #fff);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 100% */
+        letter-spacing: -1.136px;
+    }
+    p{
+        margin: 20px 0 50px 0;
+        color: var(--white-color, #fff);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+    }
+    form{
+
+    }
+    input{
+        width: 343px;
+        height: 43px;
+        background-color: transparent !important;
+        border: none;
+        border-bottom: 1px solid var(--white-color, #fff) ;
+        margin-bottom: 32px;
+        color: var(--white-color, #fff) !important;
+    }
+    textarea{
+        border: none;
+        background-color: transparent;
+        width: 343px;
+        height: 107px;
+        margin-bottom: 32px;
+        color: var(--white-color);
+    }
+    .line{
+        margin-top: 80px;
+        width: 343px;
+        height: 1px;
+        margin-inline: auto;
+        background-color: var(--white-color, #fff);
+    }
+    .top{
+        margin-top: 80px;
+    }
+    .bottom{
+        margin-top: 40px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+    button{
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    border: unset;
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--green-color);
+    margin-top: 32px;
+  }
+  .footer-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .logo{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.333px;
+    margin-top: 20px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  li{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-right: 25px;
+    font-size: 25px;
+    color: var(--white-color);
+  }
+  i:hover{
+    color: var(--green-color);
+  }
+  li:last-of-type{
+    margin-right: 0;
+  }
+</style>

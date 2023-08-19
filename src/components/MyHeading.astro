@@ -5,24 +5,26 @@ import "../style/style.css";
   <div class="top">
     <h2 class="logo">iakupmajercik</h2>
     <ul class="socials">
-      <li><i class="fa-brands fa-github" style="color: #ffffff;"></i></li>
-      <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
-      <li><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></li>
-      <li><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>
+      <li><a href="https://github.com/iakupp?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/jakup_majercik/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://twitter.com/jakub_majercik"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
   </div>
   <img src="/images/avatar.png" alt="portait" class="avatar">
   <div class="box">
     <img src="../../images/ovals.png" class="oval" alt="picture of oval">
-  </img>
+  </div>
   <div class="circle">
     <img src="../../images/circle.png" alt="circle">
   </div>
 </div>
 
 
+
 <style>
   .container{
+    width: 174px;
     height: 383px;
     background: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
   }
@@ -59,18 +61,21 @@ import "../style/style.css";
     width: 19.2px;
     color: var(--white-color);
   }
-
-  .oval{
-    z-index:-10;
+  i:hover{
+    color: var(--green-color);
+  }
+  .box{
+    position: absolute;
+    z-index:-100;
     left: 0;
-    position: fixed;
     top: 125px;
     height: 129px;
   }
   .circle{
-    z-index:-10;
+    position: absolute;
+    z-index:-100;
     right: 0;
-    position: fixed;
     top: 254px;
   }
+
 </style>

@@ -2,6 +2,10 @@
 import "../style/style.css";
 import "../style/normalize.css";
 import MyHeading from "../components/MyHeading.astro";
+import About from "../components/About.astro";
+import Skills from "../components/skills.astro";
+import Project from "../components/projects.astro";
+import Contact from "../components/contact.astro";
 ---
 
 <html lang="en">
@@ -14,8 +18,16 @@ import MyHeading from "../components/MyHeading.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<div class="hero">
+		<div id="hero">
 			<MyHeading/>
+			<About/>
+		</div>
+		<div id="main">
+			<Skills/>
+			<Project/>
+		</div>
+		<div id="footer">
+			<Contact />
 		</div>
 	</body>
 </html>

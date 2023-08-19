@@ -19,6 +19,7 @@
     font-weight: 700;
     line-height: 88px; /* 100% */
     letter-spacing: -2.5px;
+    color: var(--white-color);
 }
 .heading-l{
     font-size: 48px;
@@ -26,26 +27,56 @@
     font-weight: 700;
     line-height: 56px; /* 116.667% */
     letter-spacing: -1.5px;
+    color: var(--white-color);
 }
 .heading-m{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px; /* 133.333% */
+    color: var(--white-color);
 }
 
 li{list-style: none;}
 
 /*  Main styles  */
 
+html {
+    scroll-behavior: smooth;
+   }
 body{
     background-color: var(--black-color);
     font-family: var(--font-family);
     font-size: var(--basic-font-size);
     width: 100%;
 }
-
+a{
+    color: var(--white-color);
+    cursor: pointer;
+    &:hover{
+        color: var(--green-color);
+        border-color: var(--white-color);
+    }
+}
+button{
+    cursor: pointer;
+    &:hover{
+        color: var(--green-color);
+        border-color: var(--white-color);
+    }
+}
+*:focus {
+    outline: none;
+}
+input:-webkit-autofill{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--white-color);
+    transition: background-color 5000s ease-in-out 0s;
+}
 .container{
-    width: 174px;
     margin-inline: auto;
+    text-align: center;
+}
+#footer{
+    background-color: var(--dark-grey-color);
 }
