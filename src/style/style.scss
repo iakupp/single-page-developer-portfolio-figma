@@ -78,5 +78,7 @@ input:-webkit-autofill{
     text-align: center;
 }
 #footer{
+    position: relative;
+    z-index: 1;
     background-color: var(--dark-grey-color);
 }

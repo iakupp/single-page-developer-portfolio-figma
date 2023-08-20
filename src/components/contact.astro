@@ -22,6 +22,7 @@ import "../style/style.css"
             <li><a href="https://twitter.com/jakub_majercik"><i class="fa-brands fa-twitter"></i></a></li>
         </ul>
     </div>
+    <img class="footer_image" src="/images/slash.png" alt="slash">
 </div>
 
 
@@ -29,6 +30,8 @@ import "../style/style.css"
 <style>
     .container{
         width: 343px;
+        position: relative;
+        z-index: 999;
     }
     h2{
         padding-top: 60px;
@@ -93,6 +96,7 @@ import "../style/style.css"
     padding-bottom: 10px;
     border-bottom: 2px solid var(--green-color);
     margin-top: 32px;
+    margin-right: -11.5em;
   }
   .footer-socials{
     display: flex;
@@ -129,5 +133,13 @@ import "../style/style.css"
   }
   li:last-of-type{
     margin-right: 0;
+  }
+  .footer_image{
+    z-index: -20;
+    position: absolute;
+    left: -15em;
+    top: -2em;
+    rotate:210deg;
+    opacity: .5;
   }
 </style>

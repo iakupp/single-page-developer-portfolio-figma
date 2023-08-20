@@ -87,5 +87,7 @@ input:-webkit-autofill {
 }
 
 #footer {
+  position: relative;
+  z-index: 1;
   background-color: var(--dark-grey-color);
 }/*# sourceMappingURL=style.css.map */
