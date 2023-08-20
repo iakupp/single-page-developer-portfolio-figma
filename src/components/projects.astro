@@ -1,5 +1,6 @@
 ---
 import "../style/style.css";
+const allProjects = await Astro.glob("../content/projects/*.md");
 ---
 
 
@@ -8,87 +9,26 @@ import "../style/style.css";
         <h2>Projects</h2>
         <a class="project-contact" href="#footer">CONTACT ME</a>
     </div>
-    
     <div class="projects">
         <div class="cell">
-            <img src="/images/design-portfolio.png" alt="sample of webpage">
-            <h3 class="heading-m">design portfolio</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-            <div class="links">
-                <a href="#">view project</a>
-                <a href="#">view code</a>
-            </div>
-        </div>
-        <div class="cell">
-            <img src="/images/e-learning-landing-page.png" alt="sample of webpage">
-            <h3 class="heading-m">e learning landing page</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-            <div class="links">
-                <a href="#">view project</a>
-                <a href="#">view code</a>
-            </div>
-        </div>
-        <div class="cell">
-            <img src="/images/todo-web-app.png" alt="sample of webpage">
-            <h3 class="heading-m">todo web app</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-            </ul>
-            <div class="links">
-                <a href="#">view project</a>
-                <a href="#">view code</a>
-            </div>
-        </div>
-        <div class="cell">
-            <img src="/images/entertainment web app.png" alt="sample of webpage">
-            <h3 class="heading-m">entertainment web app</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-            </ul>
-            <div class="links">
-                <a href="#">view project</a>
-                <a href="#">view code</a>
-            </div>
-        </div>
-        <div class="cell">
-            <img src="/images/memory-game.png" alt="sample of webpage">
-            <h3 class="heading-m">memory game</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-            </ul>
-            <div class="links">
-                <a href="#">view project</a>
-                <a href="#">view code</a>
-            </div>
-        </div>
-        <div class="cell">
-            <img src="/images/art-gallery-showcase.png" alt="sample of webpage">
-            <h3 class="heading-m">art gallery showcase</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-            </ul>
-            <div class="links">
-                <a href="#">view project</a>
-                <a href="#">view code</a>
-            </div>
-        </div>
+        {
+            allProjects.map(project =>(
+                <img src={project.frontmatter.url_image} alt="sample of webpage">
+                <h3 class="heading-m">{project.frontmatter.name}</h3>
+                <ul>
+                        <li>{project.frontmatter.skill_1}</li>
+                        <li>{project.frontmatter.skill_2}</li>
+                        <li>{project.frontmatter.skill_3}</li>
+                </ul>
+                <div class="links">
+                    <a href={project.frontmatter.url_project}>view project</a>
+                    <a href={project.frontmatter.url_code}>view code</a>
+                </div>
+                </div>
+            ))
+        }
     </div>
 </div>
-
 
 
 <style>
@@ -99,7 +39,6 @@ import "../style/style.css";
         display:flex;
         justify-content: space-between;
         align-items: center;
-        /* gap: 61px; */
     }
     h2{
         color: var(--white-color, #FFF);

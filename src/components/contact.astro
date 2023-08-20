@@ -5,13 +5,15 @@ import "../style/style.css"
 <div class="container">
     <h2>Contact</h2>
     <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
-    <form action="">
-        <input type="text" placeholder="NAME">
-        <input type="text" placeholder="EMAIL">
+    <form action="" name="myForm">
+        <input type="text" name="name" placeholder="NAME">
+        <input type="text" name="email" placeholder="EMAIL">
         <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-    </form>
+      </form>
     <div class="line"></div>
-    <button>SEND MESSAGE</button>
+    <form id="sendEmail" action="">
+      <button onclick="ValidateEmail(document.myForm.email)">SEND MESSAGE</button>
+    </form>
     <div class="line"></div>
     <div class="footer-socials">
         <div class="logo">jakupmajercik</div>
@@ -27,7 +29,15 @@ import "../style/style.css"
 
 
 
+
+
 <style>
+
+  /* service_lrup9vq  ID Mailtrap*/
+
+  service_0cfk5g8
+
+
     .container{
         width: 343px;
         position: relative;

@@ -1,42 +1,23 @@
 ---
 import "../style/style.css";
+const allSkills = await Astro.glob("../content/skill/*.md");
 ---
 
 <div class="container">
     <div class="line top"></div>
     <div class="skills">
-        <div class="html">
-            <h2>HTML</h2>
-            <p>2 Years Experience</p>
-        </div>
-        <div class="css">
-            <h2>CSS</h2>
-            <p>2 Years Experience</p>
-        </div>
-        <div class="javascript">
-            <h2>Javascript</h2>
-            <p>2 Years Experience</p>
-        </div>
-        <div class="accessibility">
-            <h2>Accessibility</h2>
-            <p>2 Years Experience</p>
-        </div>
-        <div class="react">
-            <h2>React</h2>
-            <p>1 Years Experience</p>
-        </div>
-        <div class="sass">
-            <h2>Sass</h2>
-            <p>2 Years Experience</p>
-        </div>
+    {
+        allSkills.map(skill =>(
+            <h2>{skill.frontmatter.skill}</h2>
+            <p>{skill.frontmatter.experience}</p>
+        ))
+    }
     </div>
     <div class="line bottom"></div>
     <div class="box">
         <img src="../../images/ovals.png" class="oval" alt="picture of oval">
     </div>
 </div>
-
-
 
 
 
