@@ -1,7 +1,6 @@
 ---
 import "../style/style.css"
 ---
-
 <div class="container">
     <h2>Contact</h2>
     <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
@@ -10,11 +9,12 @@ import "../style/style.css"
         <input type="text" name="email" placeholder="EMAIL">
         <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
       </form>
-    <div class="line"></div>
+    <div class="line top"></div>
     <form id="sendEmail" action="">
-      <button onclick="ValidateEmail(document.myForm.email)">SEND MESSAGE</button>
+      <button onclick="sendEmail()">SEND MESSAGE</button>
     </form>
-    <div class="line"></div>
+  </div>
+    <div class="line bottom"></div>
     <div class="footer-socials">
         <div class="logo">jakupmajercik</div>
         <ul class="socials">
@@ -25,18 +25,9 @@ import "../style/style.css"
         </ul>
     </div>
     <img class="footer_image" src="/images/slash.png" alt="slash">
-</div>
-
-
-
 
 
 <style>
-
-  /* service_lrup9vq  ID Mailtrap*/
-
-  service_0cfk5g8
-
 
     .container{
         width: 343px;
@@ -151,5 +142,58 @@ import "../style/style.css"
     top: -2em;
     rotate:210deg;
     opacity: .5;
+  }
+
+
+  @media screen and (min-width: 766px){
+    .container{
+      width: 445px;
+      text-align: center;
+    }
+    h2{
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 72px; /* 100% */
+      letter-spacing: -2.045px;
+    }
+    p{
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 155.556% */
+    }
+    input{
+      width: 100%;
+    }
+    textarea{
+      width: 445px;
+    }
+    .top{
+      width: 445px;
+      margin-top: unset !important;
+    }
+    .bottom{
+      width: 706px;
+      margin-top: 92px;
+    }
+    button{
+      margin-right: -17.5em;
+    }
+    .footer-socials{
+      width: 706px;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-inline: auto;
+    }
+    .logo{
+      font-size: 32px;
+    }
+    li{
+      height: 25px;
+      width: 35px;
+    }
+
+
   }
 </style>

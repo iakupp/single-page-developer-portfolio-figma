@@ -10,9 +10,9 @@ const allProjects = await Astro.glob("../content/projects/*.md");
         <a class="project-contact" href="#footer">CONTACT ME</a>
     </div>
     <div class="projects">
-        <div class="cell">
         {
             allProjects.map(project =>(
+            <div class="cell">
                 <img src={project.frontmatter.url_image} alt="sample of webpage">
                 <h3 class="heading-m">{project.frontmatter.name}</h3>
                 <ul>
@@ -20,12 +20,12 @@ const allProjects = await Astro.glob("../content/projects/*.md");
                         <li>{project.frontmatter.skill_2}</li>
                         <li>{project.frontmatter.skill_3}</li>
                 </ul>
-                <div class="links">
-                    <a href={project.frontmatter.url_project}>view project</a>
-                    <a href={project.frontmatter.url_code}>view code</a>
-                </div>
-                </div>
-            ))
+            <div class="links">
+                <a href={project.frontmatter.url_project}>view project</a>
+                <a href={project.frontmatter.url_code}>view code</a>
+            </div>
+            </div>
+        ))
         }
     </div>
 </div>
@@ -99,4 +99,23 @@ const allProjects = await Astro.glob("../content/projects/*.md");
     margin: 0 30px 80px 0;
     }
 
+
+
+    @media screen and (min-width: 766px){
+        .container{
+            width: 706px;
+        }
+        h2{
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 72px; /* 100% */
+            letter-spacing: -2.045px;
+        }
+        .projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
 </style>
