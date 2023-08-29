@@ -11,19 +11,22 @@ import "../style/style.css";
       <li><a class="social" href="https://twitter.com/jakub_majercik"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
   </div>
-  <div class="profile">
-    <img src="/images/kk.png" alt="portait" class="avatar">
+  <div class="top_main">
+    <div class="profile">
+      <img src="/images/kk.png" alt="portait" class="avatar">
+    </div>
+    <div class="about">
+        <h1>Nice to <br class="tablet_break"> meet you! <br class="mobile_break">I´m <span>Jakub Majercik</span>.</h1>
+        <p>Based in the SVK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+        <a href="#footer" class="to_footer">contact me</a>
+    </div>
   </div>
+
   <div class="box">
     <img src="../../images/ovals.png" class="oval" alt="picture of oval">
   </div>
   <div class="circle">
     <img src="../../images/circle.png" alt="circle">
-  </div>
-  <div class="about">
-      <h1>Nice to <br class="tablet_break"> meet you! <br class="mobile_break">I´m <span>Jakub Majercik</span>.</h1>
-      <p>Based in the SVK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-      <a href="#footer" class="to_footer">contact me</a>
   </div>
 </div>
 
@@ -152,17 +155,17 @@ import "../style/style.css";
       flex-direction: row;
       width: 100%;
       justify-content: space-between;
+      max-width: unset;
+
+    }
+    .top_main{
+      display: flex;
+      flex-direction: row-reverse;
     }
     .profile{
-      position: absolute;
-      margin-left: auto;
-      margin-inline: unset ;
-      top: 0;
-      right: 0;
-      z-index: 10;
       width: 322px;
       height: 600px;
-      z-index: -5;
+      z-index: 5;
     }
     .profile img{
       height: 486px;
@@ -179,10 +182,11 @@ import "../style/style.css";
       z-index: 999;
     }
     .about{
+     position: relative;
       text-align: left;
       margin-inline: unset ;
       width: 522px;
-      z-index: 999;
+      z-index: 10;
     }
     h1{
       font-size: 72px;
@@ -191,6 +195,7 @@ import "../style/style.css";
       line-height: 72px; /* 100% */
       letter-spacing: -2.045px;
       margin: 90px 0 0 0;
+      width: 443px;
     }
     span{
       border-bottom: 6px solid var(--green-color);
