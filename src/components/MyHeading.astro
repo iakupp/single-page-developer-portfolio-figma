@@ -24,23 +24,29 @@ import "../style/style.css";
 
   <div class="box">
     <img src="../../images/ovals.png" class="oval" alt="picture of oval">
+    <img src="../../images/group 26.png" class="oval_desktop" alt="dekstop ovals">
   </div>
   <div class="circle">
-    <img src="../../images/circle.png" alt="circle">
+    <img src="../../images/circle.png" class="circle_mobile" alt="circle">
+    <img src="../../images/circle_desktop.png" class="circle_desktop" alt="circle">
   </div>
 </div>
 
 
 
 <style>
-  .container{
-  }
   .profile{
     margin-inline: auto;
     text-align: center;
     width: 174px;
     height: 383px;
     background: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
+  }
+  .oval_desktop{
+    display: none;
+  }
+  .circle_desktop{
+    display: none;
   }
   .top{
     display: flex;
@@ -139,7 +145,7 @@ import "../style/style.css";
   .tablet_break{
     display: none;
   }
-  /* Media Queries */
+  /* Media Queries Tablet */
 
   @media screen and (min-width: 766px){
     .mobile_break{
@@ -216,4 +222,55 @@ import "../style/style.css";
       top : 81px
     }
   }
+
+
+
+  /*  Media Queries desktop  */
+ @media screen and ( min-width: 1440px ){
+  .container{
+    width: 1110px;
+  }
+  .profile{
+    width: 445px;
+    height: 620px;
+  }
+  .profile img{
+    width: 444.876px;
+    height: 618px;
+    margin-top: 2px;
+  }
+  .about{
+    max-width: unset !important;
+    width: 706px;
+  }
+  h1{
+    width: 780px;
+    font-size: 88px;
+    z-index: 55;
+    position: relative;
+  }
+  .tablet_break{
+    display: none;
+  }
+  .mobile_break{
+    display: block;
+  }
+  .oval{
+    display: none;
+  }
+  .oval_desktop{
+    display:unset;
+  }
+  .circle_mobile{
+    display: none;
+  }
+  .circle_desktop{
+    display: unset;
+  }
+  .circle{
+    top: 421px;
+    right: 508px;
+  }
+ }
+
 </style>
