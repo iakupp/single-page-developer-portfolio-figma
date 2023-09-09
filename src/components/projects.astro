@@ -118,4 +118,17 @@ const allProjects = await Astro.glob("../content/projects/*.md");
             gap: 20px;
         }
     }
+
+    @media screen and (min-width: 1440px){
+        .container{
+            width: 1110px;
+        }
+        h2{
+            font-size: 88px;
+        }
+        .cell img{
+            width: 545px;
+            height: 400px;
+        }
+    }
 </style>

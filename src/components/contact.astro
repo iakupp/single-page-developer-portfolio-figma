@@ -2,17 +2,24 @@
 import "../style/style.css"
 ---
 <div class="container">
-    <h2>Contact</h2>
-    <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
-    <form action="" name="myForm">
-        <input type="text" name="name" placeholder="NAME">
-        <input type="text" name="email" placeholder="EMAIL">
-        <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+  <div class="top_section">
+    <div class="text_section">
+      <h2>Contact</h2>
+      <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+    </div>
+    <div class="contact_section">
+      <form action="" name="myForm">
+          <input type="text" name="name" placeholder="NAME">
+          <input type="text" name="email" placeholder="EMAIL">
+          <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+        </form>
+      <div class="line top"></div>
+      <form id="sendEmail" action="">
+        <button onclick="sendEmail()">SEND MESSAGE</button>
       </form>
-    <div class="line top"></div>
-    <form id="sendEmail" action="">
-      <button onclick="sendEmail()">SEND MESSAGE</button>
-    </form>
+    </div>
+
+  </div>
   </div>
     <div class="line bottom"></div>
     <div class="footer-socials">
@@ -194,6 +201,33 @@ import "../style/style.css"
       width: 35px;
     }
 
-
+    @media screen and (min-width: 1440px){
+      .container{
+        width: 1110px;
+      }
+      .top_section{
+        padding-top: 84px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .text_section{
+        text-align: left;
+      }
+      .text_section p{
+        width: 445px;
+      }
+      .text_section h2{
+        font-size: 88px;
+      }
+      .contact_section{
+        width: 445px;
+      }
+      .line.bottom{
+        width: 1110px;
+      }
+      .footer-socials{
+        width: 1100px;
+      }
+    }
   }
 </style>
