@@ -1,6 +1,9 @@
 ---
-import "../style/style.css"
+import "../style/style.css";
 ---
+<script src="../../public/index.js"></script>
+
+
 <div class="container">
   <div class="top_section">
     <div class="text_section">
@@ -8,15 +11,14 @@ import "../style/style.css"
       <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
     </div>
     <div class="contact_section">
-      <form action="" name="myForm">
-          <input type="text" name="name" placeholder="NAME">
-          <input type="text" name="email" placeholder="EMAIL">
+      <form action="" id="myForm">
+          <input type="text" id="nameInput" name="name" placeholder="NAME">
+          <input type="text" id="emailInput" name="email" placeholder="EMAIL">
+          <small id="wrongInput">Sorry, invalid format here</small>
           <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
         </form>
       <div class="line top"></div>
-      <form id="sendEmail" action="">
-        <button onclick="sendEmail()">SEND MESSAGE</button>
-      </form>
+        <button onclick="ValidateEmail()">SEND MESSAGE</button>
     </div>
 
   </div>
@@ -32,7 +34,7 @@ import "../style/style.css"
         </ul>
     </div>
     <img class="footer_image" src="/images/slash.png" alt="slash">
-
+    
 
 <style>
 
@@ -40,6 +42,18 @@ import "../style/style.css"
         width: 343px;
         position: relative;
         z-index: 999;
+    }
+    #wrongInput {
+      display: none;
+      color: #FF6F5B;
+      font-family: Space Grotesk;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: -0.167px;
+      justify-content: end;
+      margin-top: -15px;
     }
     h2{
         padding-top: 60px;
