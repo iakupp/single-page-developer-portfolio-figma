@@ -1,0 +1,28 @@
+{
+    "remotePath": "/Users/iakub/Downloads/Coding/single-page-developer-portfolio-figma/",
+    "host": "46.229.230.179",
+    "username": "to037700",
+    "password": "_lo3W#k#M",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "node_modules",
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
