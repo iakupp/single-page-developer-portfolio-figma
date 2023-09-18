@@ -1,5 +1,5 @@
 ---
-import "../style/style.css"
+import "../style/style.css";
 ---
 <script src="../../public/index.js"></script>
 
@@ -11,9 +11,10 @@ import "../style/style.css"
       <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
     </div>
     <div class="contact_section">
-      <form action="" name="myForm">
-          <input type="text" name="name" placeholder="NAME">
-          <input type="text" name="email" placeholder="EMAIL">
+      <form action="" id="myForm">
+        <input type="text" id="nameInput" name="name" placeholder="NAME">
+        <input type="text" id="emailInput" name="email" placeholder="EMAIL">
+        <small id="wrongInput">Sorry, invalid format here</small>
           <textarea name="" id="" cols="30" rows="10" placeholder="MESSAGE"></textarea>
         </form>
       <div class="line top"></div>
