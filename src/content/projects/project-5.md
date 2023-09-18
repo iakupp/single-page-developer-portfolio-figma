@@ -1,9 +1,8 @@
 ---
-url_image: /images/memory-game.png
+url_image: /images/blogr-landingpage.jpg
 name: memory game
 skill_1 : HTML
-skill_2 : CSS
-skill_3 : JAVASCRIPT
-url_project : https://github.com/iakupp/interactive-pricing-component-main
-url_code: https://github.com/iakupp/interactive-pricing-component-main
+skill_2 : SCSS
+url_project : https://github.com/iakupp/Blogr-Landingpage.git
+url_code: https://github.com/iakupp/Blogr-Landingpage.git
 ---

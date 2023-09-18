@@ -1,9 +1,9 @@
 ---
-url_image: /images/art-gallery-showcase.png
-name: art gallery showcase
+url_image: /images/product-page.jpg
+name: E-Commerce product
 skill_1 : HTML
-skill_2 : CSS
+skill_2 : SCSS
 skill_3 : JAVASCRIPT
-url_project : https://github.com/iakupp/interactive-pricing-component-main
-url_code: https://github.com/iakupp/interactive-pricing-component-main
+url_project : https://github.com/iakupp/E-Commerce-Product
+url_code: https://github.com/iakupp/E-Commerce-Product
 ---
