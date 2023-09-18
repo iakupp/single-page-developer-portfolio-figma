@@ -1,9 +1,8 @@
 ---
-url_image: /images/interactive-card.jpg
-name: Interactive Card
+url_image: /images/Easy-bank.jpg
+name: Easy-Bank
 skill_1 : HTML
-skill_2 : CSS
-skill_3 : JAVASCRIPT
-url_project : https://github.com/iakupp/Interactive-Card.git
-url_code: https://github.com/iakupp/Interactive-Card.git
+skill_2 : SCSS
+url_project : https://github.com/iakupp/Easy-Bank-Landingpage.git
+url_code: https://github.com/iakupp/Easy-Bank-Landingpage.git
 ---
