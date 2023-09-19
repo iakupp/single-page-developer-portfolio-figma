@@ -6,8 +6,6 @@ import "../style/style.css";
     <h2 class="logo">iakupmajercik</h2>
     <ul class="socials">
       <li><a class="social" href="https://github.com/iakupp?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
-      <li><a class="social" href="https://www.instagram.com/jakup_majercik/"><i class="fa-brands fa-instagram"></i></a></li>
-      <li><a class="social" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
       <li><a class="social" href="https://twitter.com/jakub_majercik"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
   </div>
@@ -15,6 +13,7 @@ import "../style/style.css";
     <div class="profile">
       <img src="/images/kk.png" alt="portait" class="avatar">
       <img src="/images/circle.png" class="circle_desktop" alt="circle">
+      <img class="footer_image" src="/images/slash.png" alt="slash">
     </div>
     <div class="about">
         <img src="/images/group 26.png" class="ovalis" alt="dekstop ovals">
@@ -35,23 +34,29 @@ import "../style/style.css";
 
 
 <style>
-  .profile{
-    margin-inline: auto;
+    .footer_image{
+      display: none;
+      opacity: .5;
+      rotate: -60deg;
+      /* width: 447px;
+      height: 559px; */
+    }
+    .profile{
+      display: none;
+      position:absolute;
+      overflow: hidden;
+      top: 7.5em;
+      left: 6.5em;
+      margin-top: -7em;
+    /* margin-inline: auto;
     text-align: center;
     width: 174px;
     z-index: 55;
     background: linear-gradient(180deg, rgba(36, 36, 36, 0.00) 0%, #242424 100%);
-    height: 383px;
-    margin-top: -7em;
-    /* position:absolute;
-    top: 7.5em;
-    left: 6.5em; */
+    height: 383px; */
   }
-  .profile .avatar{
+  .profile .avatar, .circle_desktop{
     padding-top: 7.6em ;
-  }
-
-  .circle_desktop{
     display: none;
   }
   .top{
@@ -106,6 +111,7 @@ import "../style/style.css";
     height: 129px;
   }
   .circle{
+    display: none;
     position: absolute;
     z-index:-100;
     right: 0;
@@ -120,7 +126,7 @@ import "../style/style.css";
   }
   h1{
     margin: 40px 0 20px 0;
-    color: var(--white, #FFF);
+    color: var(--white, #fff);
     font-size: 39px;
     font-style: normal;
     font-weight: 700;
@@ -172,13 +178,9 @@ import "../style/style.css";
       width: 100%;
       justify-content: space-between;
       max-width: unset;
-
-    }
-    .top_main{
-      display: flex;
-      flex-direction: row-reverse;
     }
     .profile{
+      position: absolute;
       width: 322px;
       height: 483px;
       z-index: 5;
@@ -202,9 +204,9 @@ import "../style/style.css";
     }
     .about{
      position: relative;
-      text-align: left;
-      margin-inline: unset ;
-      width: 522px;
+      text-align: center;
+      margin-inline: auto ;
+      /* width: 522px; */
       z-index: 10;
     }
     h1{
@@ -213,8 +215,8 @@ import "../style/style.css";
       font-weight: 700;
       line-height: 72px; /* 100% */
       letter-spacing: -2.045px;
-      margin: 90px 0 0 0;
-      width: 443px;
+      margin: 90px auto 0 auto;
+      /* width: 443px; */
     }
     span{
       border-bottom: 6px solid var(--green-color);
@@ -226,7 +228,7 @@ import "../style/style.css";
       line-height: 28px; /* 155.556% */
       margin-top: 60px;
       margin-bottom: 34px;
-      width: 422px;
+      /* width: 422px; */
     }
     .to_footer{
       border-bottom: 2px solid var(--green-color);
@@ -269,14 +271,11 @@ import "../style/style.css";
   .mobile_break{
     display: block;
   }
-  .oval_mobile{
-    display: none;
-  }
   .circle_mobile{
     display: none;
   }
   .circle_desktop{
-    display: unset;
+    display: none;
   }
   .circle_desktop{
     top: 421px;

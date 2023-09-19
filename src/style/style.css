@@ -3,7 +3,8 @@
 :root {
   --black-color: #151515;
   --green-color: #4EE1A0;
-  --dark-grey-color: #242424;
+  /* --green-color: #95CB9A; */
+  --dark-grey-color: #6A706C;
   --grey-color: #D9D9D9;
   --white-color: #fff;
   --font-family: "Space Grotesk", sans-serif;
@@ -90,6 +91,11 @@ input:-webkit-autofill {
   position: relative;
   z-index: 1;
   background-color: var(--dark-grey-color);
+}
+
+#hero{
+  background-color: #6A706C;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
